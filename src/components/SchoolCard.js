@@ -1,11 +1,12 @@
-import React from 'react';
-import './css/SchoolCard.css';
+import React from "react";
+import "./css/SchoolCard.css";
 
-function SchoolCard() {
-  return(
+function SchoolCard(props) {
+  console.log(props);
+  return (
     <div className="col-4">
       <div className="card">
-        <h5 className="card-header">PASS SCHOOL NAME HERE</h5>
+        <h5 className="card-header">{props.school.ENTITY_NAME}</h5>
         <div className="card-body">
           <h5 className="card-title">
             <span className="badge">2017-18</span>
